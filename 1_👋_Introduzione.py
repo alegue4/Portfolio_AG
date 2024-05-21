@@ -64,6 +64,7 @@ with st.sidebar:
         file_name="CV_Alessandro_Guerrisi.pdf",
         mime="application/pdf",
     )
+    st.write("CV non ancora pronto!")
 
 col1, col2 = st.columns([1, 2])
 

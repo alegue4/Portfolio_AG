@@ -62,6 +62,7 @@ with st.sidebar:
         file_name="CV_Alessandro_Guerrisi.pdf",
         mime="application/pdf",
     )
+    st.write("CV non ancora pronto!")
 
 # Esperienze lavorative
 st.markdown("<h2 style='text-align: center;'>Esperienze lavorative</h2>", unsafe_allow_html=True)
