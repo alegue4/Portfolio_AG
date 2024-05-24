@@ -55,7 +55,7 @@ with st.sidebar:
 
     st.title("CV")
     # Pulsante per scaricare il CV
-    cv_file_path = "img/CV_Alessandro_Guerrisi.pdf"
+    cv_file_path = "img/CV_Guerrisi_Alessandro.pdf"
     with open(cv_file_path, "rb") as cv_file:
         cv_bytes = cv_file.read()
     st.download_button(
@@ -64,7 +64,6 @@ with st.sidebar:
         file_name="CV_Alessandro_Guerrisi.pdf",
         mime="application/pdf",
     )
-    st.write("CV non ancora pronto!")
 
 col1, col2 = st.columns([1, 2])
 
