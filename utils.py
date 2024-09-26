@@ -52,7 +52,7 @@ def setup_sidebar():
 
         st.title("CV")
         # Pulsante per scaricare il CV
-        cv_file_path = "img/CV_Guerrisi_Alessandro.pdf"
+        cv_file_path = "cv/CV Alessandro Guerrisi DE.pdf"
         with open(cv_file_path, "rb") as cv_file:
             cv_bytes = cv_file.read()
         st.download_button(
