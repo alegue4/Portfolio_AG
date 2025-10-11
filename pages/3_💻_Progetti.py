@@ -13,6 +13,8 @@ java_img = load_image("img/java_logo.png")
 python_img = load_image("img/python_logo.png")
 streamlit_img = load_image("img/streamlit_logo.png")
 sr_inv_img = load_image("img/sr_inv_logo_bianco.png")
+neon_img = load_image("img/neon_logo.png")
+firebase_img = load_image("img/firebase_logo.png")
 
 with st.expander("**PROGETTI ESTERNI**", expanded=True):
     st.markdown(
@@ -33,12 +35,15 @@ with st.expander("**PROGETTI ESTERNI**", expanded=True):
                 <img src="data:image/png;base64,{sr_inv_img}" style="width:80px; margin-bottom: 20px">
                 <img src="data:image/png;base64,{python_img}" style="width:80px; margin-bottom: 20px">
                 <img src="data:image/png;base64,{streamlit_img}" style="width:80px; margin-bottom: 20px">
+                <img src="data:image/png;base64,{neon_img}" style="width:80px; margin-bottom: 20px">
             </div>
         </div>
         """,
         unsafe_allow_html=True
     )
         
+st.divider()
+
 with st.expander("**PROGETTI UNIVERSITARI**", expanded=True):
     st.markdown(
         f"""
@@ -107,6 +112,7 @@ with st.expander("**PROGETTI UNIVERSITARI**", expanded=True):
             <div style="display: flex; flex-direction: column; align-items: center; margin-left: 15px;">
                 <img src="data:image/png;base64,{android_img}" style="width:80px; margin-bottom: 20px">
                 <img src="data:image/png;base64,{java_img}" style="width:80px; margin-bottom: 20px;">
+                <img src="data:image/png;base64,{firebase_img}" style="width:80px; margin-bottom: 20px;">
             </div>
         </div>
 

@@ -8,7 +8,6 @@ def load_image(image_path):
         return base64.b64encode(image_file.read()).decode()
     
 def setup_sidebar():
-    st.sidebar.expander("Sidebar", expanded=True)
 
     with st.sidebar:
         st.title("Contact")
@@ -16,7 +15,19 @@ def setup_sidebar():
         linkedin_img = load_image("img/linkedin_logo.png")
         github_img = load_image("img/github_logo.png")
         gmail_img = load_image("img/gmail_logo.png")
+        cellphone_img = load_image("img/cellphone_icon.png")
 
+
+        # Cellphone
+        st.markdown(
+            f"""
+            <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                <img src="data:image/png;base64,{cellphone_img}" style="width:30px; margin-right: 10px;">
+                <span>+39 3791527652    </span>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
         # Gmail
         st.markdown(
             f"""
@@ -52,7 +63,7 @@ def setup_sidebar():
 
         st.title("CV")
         # Pulsante per scaricare il CV
-        cv_file_path = "cv/CV Alessandro Guerrisi DE.pdf"
+        cv_file_path = "cv/Alessandro Guerrisi's CV_Aggiornato.pdf"
         with open(cv_file_path, "rb") as cv_file:
             cv_bytes = cv_file.read()
         st.download_button(

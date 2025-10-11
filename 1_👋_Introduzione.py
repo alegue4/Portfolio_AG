@@ -9,8 +9,8 @@ setup_sidebar()
 col1, col2 = st.columns([1, 2])
 
 with col1:
-    profile_pic = Image.open("img/profile_pic.png")
-    st.image(profile_pic, use_column_width=True)
+    profile_pic = Image.open("img/profile_pic_update.png")
+    st.image(profile_pic, )
 with col2:
     # Title
     st.title("Alessandro Guerrisi", anchor=False)
